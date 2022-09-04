@@ -28,6 +28,251 @@ $.ajax({
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+      <style>.fa-google {
+        background: #675682;
+        color: #4285F4;
+        }
+        
+        .fa-linkedin {
+        background: #0e76a8;
+        color: white;
+        }
+        
+        .fa-youtube {
+        background: #675682;
+        color: white;
+        }
+        
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        button[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        button[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          width: 100%;
+          /* background-color: #f2f2f2; */
+          padding: 10px;
+        }
+        .pid{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          
+          border:2px solid groove;
+          border-radius: 50%;
+        }
+        .pidd{
+          margin:auto;
+          text-align: left;
+          /* border: 2px solid black;
+          border-radius: 50%; */
+          padding: 10% 0%;
+        }
+        #p3 img{
+          height:100%;
+          width:100%;
+          overflow: hidden;
+        }
+        #p1,#p3,#p11,footer{
+          padding-top: 80px;
+        }
+        
+        footer h2{
+          text-align: center;
+        }
+        footer .col-8{
+          text-align:left;
+          margin-top: 50px;
+          font-size: 20px;
+          width:66%;
+          float: left;
+        }
+        #footer a:hover{
+          background-color: #111;
+        }
+        @media only screen and (max-width: 700px) {
+          #p1,#p2,#p3,#p11,footer{
+            padding-top: 40px;
+          }
+          .col-4,.col-44,#col-3,.col-8{
+             width:100%; 
+             overflow:auto;
+          }
+          footer .col-8{
+            text-align:left;
+            margin-top: 50px;
+            font-size: 20px;
+            width:100%;
+            float: left;
+          }
+          #p3 p{
+            font-size: 25px;
+          }
+          #p11 img{
+            
+            width:100%;
+            float:none;
+            height:auto;
+            max-height: 600px;
+          }
+          #p11{
+            display: block;
+          }
+          #p11 .col-4{
+            background-color:#191a1d;
+          }
+          .header{
+            width:100%;
+            /* padding-left: 5vw; */
+            
+            
+        }
+        .header img{
+          /* //display: block; */
+          margin-left: auto;
+          margin-right: auto;
+          border:2px solid red;
+          width: 50%;
+          margin:0% 20%;
+          margin-top: 22%;
+        }
+        
+          .header a {
+            display: block;
+            color: white;
+            /* //margin-top:20px;  */
+            text-align: center;
+            /* //padding: 14px 16px; */
+            text-decoration: none;
+            width:25%;
+            float: left;
+          }
+          
+          li a:hover:not(.active) {
+            background-color: #438aa7;
+          }
+          
+          .active {
+            background-color: #4a97b6;
+          }
+        
+           #p1 img{
+             margin:0vw 10vw;
+            width:70vw;
+            height:100vw;
+            overflow: auto;
+          }
+          .flip-card {
+            background-color: transparent;
+             height: 60vw;
+            width: 80vw;
+            margin: 0vw 5vw; 
+           
+         
+          }
+          #p1{
+            margin: 0px;
+          }
+          #p1 .col-8{
+            /* //padding:0% 10% ; */
+            width: 100%;
+            margin-bottom:20px;
+          }
+          #p3 .pidd{
+            width:92vw;
+            padding: 0px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        
+          }
+          #p3 .col-8{
+            margin-top: 0px;
+          }
+          #p3 h1{
+            font-size: 1.5em;
+          }
+          .col-44{
+            width:100vw;
+            padding: 0vw 20vw;
+          }
+          
+          .ccc{
+            width: 90%;
+            margin:10px;
+            margin-left: 10%;
+          }
+          .col-33{
+            width:44%;
+            float: left;
+            margin:1%;
+          }
+          .logo{
+            margin-top: 6 0px;
+            width: 100%;
+            padding:0% 20%;
+            position: relative;
+            z-index: 0;
+          }
+          footer h2{
+            /* margin-left:20vw; */
+            margin-bottom: 15px;
+            width: 100%;
+          }
+          .container{
+           /* // margin-left:10vw; */
+            padding: 0px;
+            width:100vw;
+          }
+          .header a {
+            /* //display: block; */
+            color: white;
+            margin-top:10px; 
+            text-align: center;
+            padding: 3% 5%;
+            text-decoration: none;
+            width:20%;
+            float: left;
+          }
+          p{
+            font-size: 20px;
+          }
+          #p2{
+             padding-top: 20px;
+          }
+          #p1 p{
+             text-align: center;
+             font-size: 22px;
+          }
+        }
+        .nav {
+          position: fixed;
+          width:100vw;
+          z-index: 1;
+        }
+        </style>
         <div id="main">
             <div id="header">
                <div class="header logo"><img src="../assets/logo.png"/></div><div class="header nav">
